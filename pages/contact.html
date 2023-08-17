@@ -1,16 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
-    <h1>我是contact</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>contact</title>
+  <%- include('./layout/head'); -%>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <main>
+      <section class="contact-box1">
+        <div class="container">
+          <h2 class="title">門市據點</h2>
+          <div class="select-box">
+            <h4 class="select-description">選擇分店</h4>
+            <select id="selectList" class="selectList">
+              <option value="台北中山旗艦店">台北中山旗艦店</option>
+              <option value="台北北車旗艦店">台北北車旗艦店</option>
+            </select>
+          </div>
+          <ul class="list">
+            <li class="item">
+              <div class="item-box">
+                <!-- <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/storepage-1.png?raw=true"
+                  alt="storepage-1"> -->
+              </div>
+              <div class="item-box">
+                <h4 class="item-title">台北中山旗艦店</h4>
+                <div class="item-text">
+                  <h5>
+                    <span class="material-symbols-outlined">
+                      call
+                    </span>電話：(02)000-1234
+                  </h5>
+                  <h5>
+                    <span class="material-symbols-outlined">
+                      schedule
+                    </span>營業時間：10:00-21:00
+                  </h5>
+                  <h5>
+                    <span class="material-symbols-outlined">
+                      location_on
+                    </span>地址：台北市中山區南京東路25巷2-1號
+                  </h5>
+                </div>
+              </div>
+            </li>
+            <li class="item">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.1937295667353!2d121.58451357593441!3d25.061422137185808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab7e5d54f56d%3A0xd9f669d66f4a026d!2zMTE05Y-w5YyX5biC5YWn5rmW5Y2A5Y2X5Lqs5p2x6Lev5YWt5q61IFNlY3Rpb24gNjI16Jmf!5e0!3m2!1szh-TW!2stw!4v1692276629432!5m2!1szh-TW!2stw" width="746" height="414"
+                  style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

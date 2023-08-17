@@ -1,0 +1,37 @@
+// color
+$red: #AA0601;
+$darkRed:#650300;
+$white: #ffffff;
+$skin: #FBF2F2;
+$black:#000000;
+$gray:#707070;
+$darkGray:#495057;
+
+// font
+$font-size-base: 1rem; // 16px
+$h1-font-size: $font-size-base * 4; // 64px
+$h2-font-size: $font-size-base * 3; // 48px
+$h3-font-size: $font-size-base * 2.25; // 36px
+$h4-font-size: $font-size-base * 1.5; // 24px
+$h5-font-size: $font-size-base * 1.25; // 20px
+$h6-font-size: $font-size-base; // 16px
+$font-size-sm: $font-size-base * 0.875; // 14px
+
+$lineHeight:1.5;
+
+// breakpoint
+$phone-width: 768px;
+$tablet-width: 990px;
+$web-width:$tablet-width+1;
+
+// border
+$borderTitle:#9F1213;
+$contactBoxColor:#00000020;
+
+// btn
+$btn-bgColor:$red;
+$btn-textColor:$white;
+$btn-selectColor:#CED4DA;
+
+// space
+$max:10;

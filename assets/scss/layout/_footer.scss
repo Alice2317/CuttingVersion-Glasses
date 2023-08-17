@@ -7,13 +7,15 @@
   padding-bottom: 32px;
 
 
-  @media screen and (max-width:992px) {
+  @include tablet() {
     padding-top: 56px;
   }
 
-  @media screen and (max-width:768px) {
+  @include phone() {
     padding-top: 24px;
     padding-bottom: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
 
@@ -31,12 +33,12 @@
       max-width: 48px;
       margin-right: 32px;
 
-      @media screen and (max-width:992px) {
+      @include tablet() {
         max-width: 40px;
         margin-right: 16px;
       }
 
-      @media screen and (max-width:768px) {
+      @include phone() {
         max-width: 24px;
         margin-right: 8px;
       }
@@ -49,7 +51,7 @@
 
 
   .d-none {
-    @media screen and (max-width:768px) {
+    @include phone() {
       display: none;
     }
   }
@@ -58,11 +60,11 @@
     margin-top: 36px;
     font-size: 36px;
 
-    @media screen and (max-width:992px) {
+    @include tablet() {
       margin-top: 32px;
     }
 
-    @media screen and (max-width:768px) {
+    @include phone() {
       font-size: initial;
       margin-top: initial;
     }
@@ -73,7 +75,7 @@
       margin-right: 20px;
       color: $white;
 
-      @media screen and (max-width:768px) {
+      @include phone() {
         font-size: 20px;
         margin-right: 10px;
       }
@@ -93,11 +95,11 @@
   padding: 32px 0;
   color: $white;
 
-  @media screen and (max-width:992px) {
+  @include tablet() {
     padding: 32px 0 40px 0;
   }
 
-  @media screen and (max-width:768px) {
+  @include phone() {
     padding: 16px 0 24px 0;
     display: block;
   }
@@ -108,14 +110,14 @@
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width:768px) {
+    @include phone() {
       display: block;
     }
 
     .footerItem {
       margin-right: 48px;
 
-      @media screen and (max-width:768px) {
+      @include phone() {
         margin-right: auto;
         padding-top: 8px;
       }
@@ -130,4 +132,9 @@
 
 .borderTop {
   border-top: 1px solid $white;
+
+  @include phone() {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
 }

@@ -1,3 +1,363 @@
-.index-title {
-  font-size: 100px;
+.box1 {
+  padding-top: 296px;
+  padding-bottom: 437px;
+  color: $darkRed;
+  text-align: right;
+  @include bg-imgCover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+
+  @include phone() {
+    @include bg-imgCover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+  }
+
+  @include phone() {
+    padding-top: 144px;
+    padding-bottom: 228px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    background: $btn-bgColor;
+    font-size: $h5-font-size;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    color: $btn-textColor;
+    border: initial;
+
+    @include phone() {
+      margin-top: 8px;
+    }
+  }
+}
+
+.box2 {
+  text-align: center;
+  color: $darkRed;
+
+  @include section-spacing();
+
+  .title {
+    padding-bottom: 36.5px;
+
+    @include tablet() {
+      padding-bottom: 8px;
+    }
+
+    @include phone() {
+      padding-bottom: initial;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .item {
+      width: calc(25% - 12px);
+
+      @include tablet() {
+        margin-top: 24px;
+        width: calc(50% - 12px);
+      }
+
+      @include phone() {
+        margin-top: 32px;
+        width: 100%;
+      }
+
+
+      h4 {
+        margin-top: 24px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      img {
+        max-width: 83px;
+      }
+
+    }
+  }
+
+}
+
+.box3 {
+  text-align: center;
+  color: $darkRed;
+
+  @include section-spacing();
+
+  .title {
+    padding-bottom: 48px;
+
+    @include tablet() {
+      padding-bottom: 24px;
+    }
+
+    @include phone() {
+      padding-bottom: initial;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .item {
+      width: calc(33% - 12px);
+
+      @include tablet() {
+        margin-top: 24px;
+        width: 100%
+      }
+
+      .item-title {
+        font-style: italic;
+        font-size: $h2-font-size;
+        color: $red;
+      }
+
+      img {
+        max-width: 416px;
+
+        @include tablet() {
+          max-width: 336px;
+        }
+
+        @include phone() {
+          max-width: 348px;
+        }
+      }
+    }
+  }
+}
+
+.box4 {
+  @include bg-imgCover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+
+  @include tablet() {
+    @include bg-imgCover('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true');
+  }
+
+  @include phone() {
+    @include bg-imgCover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+  }
+
+  text-align: center;
+  color: $white;
+
+  @include section-spacing();
+
+  .title {
+    padding-bottom: 48px;
+
+    @include tablet() {
+      padding-bottom: 24px;
+    }
+
+    @include phone() {
+      padding-bottom: initial;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .item {
+      width: 50%;
+
+      @include tablet() {
+        margin-top: 24px;
+        width: 100%
+      }
+
+      .item-title {
+        background: $white;
+        font-style: italic;
+        font-size: $h2-font-size;
+        color: $red;
+      }
+    }
+  }
+
+}
+
+.box5 {
+
+  color: $darkRed;
+  @include section-spacing();
+
+  .title {
+    text-align: center;
+    padding-bottom: 48px;
+
+
+    @include tablet() {
+      padding-bottom: 24px;
+    }
+
+    @include phone() {
+      padding-bottom: 8px;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    color: $black;
+
+    .item {
+      width: calc(25% - 12px);
+      border: 1px solid #DEE2E6;
+      border-radius: 4px;
+      box-shadow: 0px 2px 6px #00000029;
+
+
+      @include tablet() {
+        margin-top: 24px;
+        width: calc(50% - 12px);
+      }
+
+      @include phone() {
+        margin-top: 16px;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .item-body {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 120px;
+        padding: 16px;
+
+        .item-title {
+          margin-bottom: 8px;
+          font-weight: 500;
+        }
+
+        .item-text {
+          flex-basis: 120px;
+        }
+
+        .item-footer {
+          color: $gray;
+          font-size: $font-size-sm;
+        }
+      }
+
+    }
+  }
+
+}
+
+.box6 {
+  @include section-spacing();
+
+  .container-form {
+    max-width: 636px;
+    margin: auto;
+
+    @include tablet() {
+      max-width: 576px;
+    }
+
+    @include phone() {
+      max-width: 348px;
+    }
+  }
+
+  .title {
+    text-align: center;
+    color: $darkRed;
+    padding-bottom: 48px;
+
+
+    @include tablet() {
+      padding-bottom: 24px;
+    }
+
+  }
+
+  .description {
+    margin-bottom: 24px;
+
+    @include tablet() {
+      font-size: $font-size-base;
+    }
+  }
+
+  form {
+    text-align: center;
+
+    .formItem {
+      text-align: left;
+      display: block;
+      margin-bottom: 16px;
+
+      p {
+        margin-bottom: 8px;
+      }
+
+      .d-block {
+        display: block;
+        font-size: $font-size-base;
+        font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+        font-weight: normal;
+        line-height: 1.5;
+        width: 100%;
+        border: 1px solid $black;
+        padding: 6px 12px;
+      }
+
+      textarea {
+        height: 136px;
+      }
+    }
+
+    .checkBox {
+      display: flex;
+      justify-content: start;
+      align-items: flex-start;
+
+      .checkText {
+        margin-left: 4px;
+      }
+    }
+
+    .form-btn {
+      padding: 16px 176px;
+      margin-top: 32px;
+      background: $red;
+      font-size: $font-size-base;
+      font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+      font-weight: bold;
+      line-height: 1.5;
+      border: 0;
+      color: $white;
+
+      @include tablet() {
+        padding: 16px 136px;
+      }
+
+      @include phone() {
+        padding: 16px 142px;
+      }
+    }
+  }
 }

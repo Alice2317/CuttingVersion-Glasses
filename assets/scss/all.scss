@@ -1,9 +1,15 @@
-@import './reset';
-@import './variables';
-@import './base';
+// base
+@import './base/reset';
 
+@import './base/variables';
+@import './utils/mixin';
+@import './base/base';
+
+
+// layout
 @import './layout/header';
 @import './layout/footer';
 
-
+// pages
 @import './pages/index';
+@import './pages/contact';

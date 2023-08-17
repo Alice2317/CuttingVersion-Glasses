@@ -1,20 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <%- include('./layout/head'); -%>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">常見問題</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <%- include('./layout/head'); -%>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <main>
+
+      <section class="box1">
+        <div class="container">
+          <h3>Promise-Desert 2020 早春系列</h3>
+          <h1>看得清，才能看得遠</h1>
+          <button type="submit" class="btn">立即購買</button>
+        </div>
+      </section>
+
+      <section class="bg-skin box2">
+        <div class="container">
+          <h2 class="title">用專業的心，做專業的事</h2>
+          <ul class="list">
+            <li class="item">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-1.png?raw=true"
+                alt="sectioin2-1">
+              <h4>單一價格</h4>
+              <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+            </li>
+
+            <li class="item">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-2.png?raw=true"
+                alt="sectioin2-2">
+              <h4>20 分鐘即可取件</h4>
+              <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+            </li>
+
+            <li class="item">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-3.png?raw=true"
+                alt="sectioin2-3">
+              <h4>安心售後服務</h4>
+              <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+            </li>
+
+            <li class="item">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-sectioin2-4.png?raw=true"
+                alt="sectioin2-4">
+              <h4>關於鏡片</h4>
+              <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="box3">
+        <div class="container">
+          <h2 class="title">經典系列鏡框</h2>
+          <ul class="list">
+            <li class="item">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true"
+                alt="sectioin3-1">
+              <h2 class="item-title">OPTICAL</h2>
+            </li>
+
+            <li class="item">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true"
+                alt="sectioin3-2">
+              <h2 class="item-title">SUNGLASSES</h2>
+            </li>
+
+            <li class="item">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true"
+                alt="sectioin3-3">
+              <h2 class="item-title">FUNCTIONAL</h2>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="box4">
+        <div class="container">
+          <h2 class="title">聯名設計鏡框</h2>
+          <ul class="list">
+            <li class="item">
+              <picture>
+                <source media="(max-width:768px)"
+                  srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true"
+                  alt="sectioin4-1">
+              </picture>
+              <h2 class="item-title">DOUBLE A+</h2>
+            </li>
+
+            <li class="item">
+
+              <picture>
+                <source media="(max-width:768px)"
+                  srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true"
+                  alt="sectioin4-2">
+              </picture>
+              <h2 class="item-title">YOUTH</h2>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section class="box5">
+        <div class="container">
+          <h2 class="title">顧客推薦</h2>
+          <ul class="list">
+            <li class="item">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-1.png?raw=true"
+                alt="sectioin5-1">
+              <div class="item-body">
+                <h6 class="item-title">Jessy</h6>
+                <p class="item-text">眼鏡品質優良，下次還會想來這邊購買！</p>
+                <p class="item-footer">2021/06/20</p>
+              </div>
+            </li>
+
+            <li class="item">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-2.png?raw=true"
+                alt="sectioin5-2">
+              <div class="item-body">
+                <h6 class="item-title">凱倫</h6>
+                <p class="item-text">做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+                <p class="item-footer">2021/04/18</p>
+              </div>
+            </li>
+
+            <li class="item">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-3.png?raw=true"
+                alt="sectioin5-3">
+              <div class="item-body">
+                <h6 class="item-title">悠悠</h6>
+                <p class="item-text">謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+                <p class="item-footer">2020/12/25</p>
+              </div>
+            </li>
+
+            <li class="item">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-4.png?raw=true"
+                alt="sectioin5-4">
+              <div class="item-body">
+                <h6 class="item-title">Kyuan</h6>
+                <p class="item-text">服務很好，品質沒有任何問題，非常喜歡。</p>
+                <p class="item-footer">2020/10/31</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-skin box6">
+        <div class="container-form">
+          <h2 class="title">聯絡我們</h2>
+          <h5 class="description">
+            我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+          </h5>
+          <form action="" method="post">
+            <label for="name" class="formItem">
+              <p>姓名</p>
+              <input type="text" class="d-block" placeholder="陳小明" id="name">
+            </label>
+            <label for="tel" class="formItem">
+              <p>聯絡電話</p>
+              <input type="tel" class="d-block" placeholder="0912-345-678" id="tel">
+            </label>
+            <label for="email" class="formItem">
+              <p>電子郵件</p>
+              <input type="email" class="d-block" placeholder="example@email.com" id="email">
+            </label>
+            <label for="text" class="formItem">
+              <p>意見反應</p>
+              <textarea class="d-block" id="text" cols="20" rows="6" placeholder="請輸入您的意見"></textarea>
+            </label>
+            <label for="checkbox" class="formItem checkBox">
+              <input type="checkbox" id="checkbox">
+              <p  class="checkText">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p>
+            </label>
+            <input type="submit" value="確認送出" class="form-btn">
+          </form>
+        </div>
+      </section>
+
+    </main>
 
     <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
