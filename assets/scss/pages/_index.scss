@@ -112,11 +112,9 @@
     align-items: stretch;
 
     .item {
-      width: calc(33% - 12px);
-
       @include tablet() {
+        width: 100%;
         margin-top: 24px;
-        width: 100%
       }
 
       .item-title {

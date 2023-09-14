@@ -1,0 +1,156 @@
+.blog-box1 {
+    background: $darkRed;
+    color: $white;
+
+    @include phone() {
+        display: none;
+    }
+
+    .list {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .item {
+            padding-top: 13px;
+            padding-bottom: 13px;
+            padding-right: 24px;
+            font-weight: bold;
+
+            &:last-of-type(0) {
+                padding-right: 0;
+            }
+        }
+
+        .marginAuto {
+            margin-left: auto;
+        }
+    }
+}
+
+.blog-box2 {
+    @include section-spacing();
+
+    .title {
+        border-left: 8px solid $borderTitle;
+        text-indent: 16px;
+
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 24px;
+
+            &:nth-of-type(1) {
+                margin-top: 33px;
+
+                @include tablet() {
+                    margin-top: 40px;
+                }
+
+                @include phone() {
+                    margin-top: 24px;
+                }
+            }
+
+            @include phone() {
+                flex-direction: column;
+            }
+        }
+
+
+        .item-body {
+            display: flex;
+            flex-direction: column;
+            width: calc(50% - 12px);
+            height: 100%;
+
+            @include phone() {
+                width: 100%;
+            }
+
+            .item-title {
+                font-size: 32px;
+                color: $darkRed;
+
+                @include tablet() {
+                    font-size: 24px;
+                }
+
+                @include phone() {
+                    margin-top: 8px;
+                }
+            }
+
+            .item-title2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .title2 {
+                    font-size: 20px;
+                    font-weight: bold;
+
+                    @include tablet() {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .item-text {
+                flex: 2;
+                margin-top: 16px;
+                color: $gray500;
+
+                @include tablet() {
+                    margin-top: 4px;
+
+                    p {
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 6;
+                        -webkit-box-orient: vertical;
+                        position: relative;
+
+                    }
+                }
+
+                @include phone() {
+                    display: none;
+                }
+
+                .text-link {
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 1;
+                    background: $white;
+
+                    @include tablet() {
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .item-footer {
+                color: $darkRed;
+                font-size: 36px;
+                font-weight: 900;
+                text-align: right;
+
+                @include tablet() {
+                    display: none;
+                }
+            }
+        }
+    }
+}

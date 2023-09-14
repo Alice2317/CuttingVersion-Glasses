@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <%- include('./layout/head'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <main>
+
+            <section class="container">
+                <div class="list-box1">
+                    <a href="list.html" class="item">OPTICAL</a>
+                    <a href="list2.html" class="item  active">SUNGLASSES</a>
+                    <a href="list3.html" class="item">FUNCTIONAL</a>
+                </div>
+            </section>
+
+            <section class="list-box2">
+                <ul class="list">
+                    <li class="item">
+                        <picture>
+                            <source media="(max-width:768px)"
+                                srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true"
+                                alt="product-header-3">
+                        </picture>
+                    </li>
+
+                    <li class="item">
+
+                        <picture>
+                            <source media="(max-width:768px)"
+                                srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true"
+                                alt="product-header-4">
+                        </picture>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section class="list-box3">
+                <div class="container">
+                    <h3 class="title1">2020 NEW COLLECTION</h3>
+                    <h4 class="title2 fs-sans">賽璐珞鈦金屬混合鏡框</h4>
+                    <ul class="list2">
+
+                        <li class="item">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-7.png?raw=true"
+                                alt="product-7">
+                            <div class="item-body">
+                                <p class="item-title">BJ41600S</p>
+                                <p class="item-text">NTD3,490</p>
+                            </div>
+                            <span class="small-item1"></span>
+                            <span class="small-item2"></span>
+                        </li>
+                        <li class="item">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-8.png?raw=true"
+                                alt="product-8">
+                            <div class="item-body">
+                                <p class="item-title">BJ41600S</p>
+                                <p class="item-text">NTD3,490</p>
+                            </div>
+                            <span class="small-item1"></span>
+                            <span class="small-item2"></span>
+                        </li>
+                        <li class="item">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-9.png?raw=true"
+                                alt="product-9">
+                            <div class="item-body">
+                                <p class="item-title">BJ41600S</p>
+                                <p class="item-text">NTD3,490</p>
+                            </div>
+                            <span class="small-item1"></span>
+                            <span class="small-item2"></span>
+                        </li>
+                        <li class="item">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-10.png?raw=true"
+                                alt="product-10">
+                            <div class="item-body">
+                                <p class="item-title">BJ41600S</p>
+                                <p class="item-text">NTD3,490</p>
+                            </div>
+                            <span class="small-item1"></span>
+                            <span class="small-item2"></span>
+                        </li>
+                        <li class="item">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-11.png?raw=true"
+                                alt="product-11">
+                            <div class="item-body">
+                                <p class="item-title">BJ41600S</p>
+                                <p class="item-text">NTD3,490</p>
+                            </div>
+                            <span class="small-item1"></span>
+                            <span class="small-item2"></span>
+                        </li>
+                        <li class="item">
+                            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-12.png?raw=true"
+                                alt="product-12">
+                            <div class="item-body">
+                                <p class="item-title">BJ41600S</p>
+                                <p class="item-text">NTD3,490</p>
+                            </div>
+                            <span class="small-item1"></span>
+                            <span class="small-item2"></span>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section class="container">
+                <div class="list-box4">
+                    <a href="#" class="prev">上一頁</a>
+                    <a href="#" class="pagination">1</a>
+                    <a href="#" class="pagination active">2</a>
+                    <a href="#" class="pagination">3</a>
+                    <a href="#" class="pagination">4</a>
+                    <a href="#" class="pagination">5</a>
+                    <a href="#" class="next">下一頁</a>
+                </div>
+            </section>
+
+        </main>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

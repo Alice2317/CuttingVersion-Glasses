@@ -1,0 +1,64 @@
+.list-box3 {
+    .list2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+
+        .item {
+            width: calc(33% - 12px);
+            margin-top: 80px;
+
+            &:nth-of-type(1),
+            &:nth-of-type(2),
+            &:nth-of-type(3){
+                margin-top: 32px;
+
+                @include phone() {
+                    margin-top: 24px;
+                }
+            }
+
+            @include tablet() {
+                margin-top: 40px;
+                width: calc(50% - 12px);
+            }
+
+            @include phone() {
+                margin-top: 24px;
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .item-body {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 24px;
+
+                .item-text {
+                    color: $red;
+                }
+            }
+
+            .small-item1 {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: #5F3E2D;
+                border-radius: 4px;
+            }
+
+            .small-item2 {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: #B75929;
+                border-radius: 4px;
+            }
+        }
+    }
+}

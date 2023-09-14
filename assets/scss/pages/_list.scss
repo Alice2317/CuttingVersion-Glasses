@@ -1,0 +1,168 @@
+.list-box1 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+
+    .item {
+        width: 432px;
+        border: 1px solid $lightGray;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-size: 32px;
+
+        @include tablet() {
+            font-size: 24px;
+        }
+
+        @include phone() {
+            font-size: 16px;
+        }
+    }
+
+    .active {
+        border-bottom: 8px solid $red;
+    }
+}
+
+.list-box2 {
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+
+        .item {
+            width: 50%;
+        }
+    }
+}
+
+.list-box3 {
+    @include section-spacing();
+
+    .title1 {
+        text-align: center;
+        font-size: 42px;
+
+
+        @include phone() {
+            font-size: 24px;
+        }
+    }
+
+    .title2 {
+        text-align: center;
+        font-size: 32px;
+
+        @include phone() {
+            font-size: 24px;
+        }
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+
+        .item {
+            width: calc(25% - 12px);
+            margin-top: 80px;
+
+            &:nth-of-type(1),
+            &:nth-of-type(2),
+            &:nth-of-type(3),
+            &:nth-of-type(4) {
+                margin-top: 32px;
+
+                @include phone() {
+                    margin-top: 24px;
+                }
+            }
+
+            @include tablet() {
+                margin-top: 40px;
+                width: calc(50% - 12px);
+            }
+
+            @include phone() {
+                margin-top: 24px;
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .item-body {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 24px;
+
+                .item-text {
+                    color: $red;
+                }
+            }
+
+            .small-item1 {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: #5F3E2D;
+                border-radius: 4px;
+            }
+
+            .small-item2 {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: #B75929;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.list-box4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    @include phone() {
+        margin-bottom: 64px;
+    }
+
+    .pagination {
+
+        border: 1px solid $gray500;
+        font-size: 18px;
+        padding: 12px 16px;
+
+        @include tablet() {
+            font-size: 24px;
+        }
+
+        @include phone() {
+            font-size: 16px;
+        }
+    }
+
+    .prev,
+    .next {
+        border: 1px solid $gray500;
+        font-size: 19px;
+        padding: 12px;
+    }
+
+    .next {
+        background: #F2F2F2;
+    }
+
+    .active {
+        background: $black;
+        color: $white;
+        border: 0;
+    }
+}
